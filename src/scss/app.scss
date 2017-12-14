@@ -1,0 +1,17 @@
+// @import './_partials/foundation.min.scss';
+// @import './_partials/layout.scss';
+// @import './_partials/typography.scss';
+
+body {
+  background: lightgray;
+  font-family: sans-serif;
+  .target {
+    background: white;
+    width: 10em;
+    height: 10em;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
