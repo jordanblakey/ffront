@@ -14,16 +14,16 @@ module.exports = function(pageName) {
    */
 
   return function() {
-    let params = Array.prototype.slice.call(arguments);
-    let pages = params.slice(0, -1);
-    let options = params[params.length - 1];
+    let params = Array.prototype.slice.call(arguments)
+    let pages = params.slice(0, -1)
+    let options = params[params.length - 1]
 
     for (let i in pages) {
       if (pages[i] === pageName) {
-        return options.fn(this);
+        return options.fn(this)
       }
     }
 
-    return "";
-  };
-};
+    return ''
+  }
+}

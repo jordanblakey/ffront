@@ -1,4 +1,4 @@
-import marked from "marked";
+import marked from 'marked'
 
 /**
  * Handlebars block helper that converts Markdown to HTML.
@@ -9,5 +9,5 @@ import marked from "marked";
  **/
 
 module.exports = function(options) {
-  return marked(options.fn(this));
-};
+  return marked(options.fn(this))
+}
