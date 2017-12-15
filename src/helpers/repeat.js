@@ -10,20 +10,20 @@ import Handlebars from 'handlebars'
  */
 
 module.exports = function(count, options) {
-  let str = '';
-  let data;
+  let str = ''
+  let data
 
   if (options.data) {
-    data = Handlebars.createFrame(options.data);
+    data = Handlebars.createFrame(options.data)
   }
 
   for (let i = 0; i < count; i++) {
     if (data) {
-      data.index = i;
+      data.index = i
     }
 
-    str += options.fn(this, { data: data });
+    str += options.fn(this, { data: data })
   }
 
-  return str;
+  return str
 }

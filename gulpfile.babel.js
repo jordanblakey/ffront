@@ -54,7 +54,7 @@ function sassError(err) {
   sfx.pop(); this.emit('end')
 }
 function test(done) {
-  jest.runCLI({ config : {} }, ".")
+  jest.runCLI({ config: {} }, ".")
   done()
 }
 function pretty(done) {
