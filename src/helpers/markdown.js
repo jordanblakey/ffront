@@ -9,5 +9,5 @@ import marked from 'marked'
  **/
 
 module.exports = function(options) {
-  return marked(options.fn(this));
+  return marked(options.fn(this))
 }

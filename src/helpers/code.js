@@ -1,4 +1,4 @@
-import {format} from 'util'
+import { format } from 'util'
 import hljs from 'highlight.js'
 
 /**
@@ -11,9 +11,13 @@ import hljs from 'highlight.js'
  */
 
 module.exports = function(language, options) {
-  if (typeof language === 'undefined') language = 'html';
+  if (typeof language === 'undefined') language = 'html'
 
-  let code = hljs.highlight(language, options.fn(this)).value;
+  let code = hljs.highlight(language, options.fn(this)).value
 
-  return format('<div class="code-example"><pre><code class="%s">%s</code></pre></div>', language, code);
+  return format(
+    '<div class="code-example"><pre><code class="%s">%s</code></pre></div>',
+    language,
+    code
+  )
 }

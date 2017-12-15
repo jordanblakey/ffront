@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "gulp",
     "start": "gulp --production",
-    "build": "gulp build --production"
+    "build": "gulp build --production",
+    "test": "jest --verbose --automock --notify"
   },
   "author": "Jordan Blakey",
   "license": "MIT",
@@ -55,6 +56,16 @@
     "presets": [
       "env"
     ]
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [ "src/**/*.js", "!*.min.js", "!src/**/lib/**/*.js", "!src/**/helpers/**/*.js" ],
+    "coverageThreshold": { "global": { "branches": 80, "functions": 80, "lines": 80, "statements": -10 } },
+    "coverageDirectory": "node_modules/coverage",
+    "moduleFileExtensions": ["js", "jsx", "json", "ts", "tsx"],
+    "verbose": false,
+    "automock": false,
+    "notify": false
   },
   "eslintIgnore": [
     "*.min.js",
