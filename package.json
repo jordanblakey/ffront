@@ -1,40 +1,63 @@
 {
-  "name": "hammer-js-touch",
+  "name": "nano-front",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "description": "Lightweight, performant, extensible front-end build system.",
+  "main": "gulpfile.babel.js",
   "scripts": {
-    "start": "gulp watch",
-    "del": "gulp del"
+    "dev": "gulp",
+    "start": "gulp --production",
+    "build": "gulp build --production"
   },
+  "author": "Jordan Blakey",
+  "license": "MIT",
   "dependencies": {
+    "axios": "^0.17.1",
+    "date-fns": "^1.29.0",
     "fecha": "^2.3.2",
-    "hammerjs": "^2.0.8",
-    "lodash": "^4.17.4"
+    "foundation-sites": "~6.4.1",
+    "lodash": "^4.17.4",
+    "nanobar": "^0.4.2",
+    "rellax": "^1.4.0",
+    "scrollreveal": "^3.3.6",
+    "zingtouch": "^1.0.5"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "browser-sync": "^2.18.13",
-    "del": "^3.0.0",
-    "gulp": "^3.9.1",
-    "gulp-babel": "^7.0.0",
-    "gulp-changed": "^3.1.1",
-    "gulp-compile-handlebars": "^0.6.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-cssnano": "^2.1.2",
-    "gulp-front-matter": "^1.3.0",
+    "gulp": "gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-cli": "^1.4.0",
+    "gulp-if": "^2.0.2",
     "gulp-imagemin": "^4.0.0",
+    "gulp-load-plugins": "^1.5.0",
     "gulp-notify": "^3.0.0",
     "gulp-plumber": "^1.1.0",
-    "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
-    "gulp-util": "^3.0.8",
-    "gulp-webpack": "^1.5.0",
+    "gulp-uncss": "^1.0.6",
     "imagemin-giflossy": "^5.1.10",
     "imagemin-mozjpeg": "^6.0.0",
     "imagemin-pngquant": "^5.0.1",
-    "sfx": "^0.1.1"
-  }
+    "jest": "^21.2.1",
+    "js-yaml": "^3.10.0",
+    "panini": "^1.5.1",
+    "prettier": "^1.9.2",
+    "rimraf": "^2.6.2",
+    "sfx": "^0.1.1",
+    "vinyl-named": "^1.1.0",
+    "webpack": "^3.10.0",
+    "webpack-stream": "^4.0.0"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "eslintIgnore": [
+    "*.min.js",
+    "node_modules"
+  ]
 }

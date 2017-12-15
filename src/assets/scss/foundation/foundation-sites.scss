@@ -1,0 +1,81 @@
+// FOUNDATION FOR SITES (Custom) ///////////////////////////////////////////////
+// https://foundation.zurb.com/sites/docs
+@charset 'utf-8';
+@import 'settings';
+@import 'foundation';
+
+////////////////////////////////////////////////////////////////////////////////
+// MASS INCLUDE (Use everything)
+////////////////////////////////////////////////////////////////////////////////
+// @include foundation-everything; // ALL THE THINGS
+// @import 'motion-ui'; // ANIMATION LIBRARY
+
+////////////////////////////////////////////////////////////////////////////////
+// CORE INCLUDE (Basic feautures)
+////////////////////////////////////////////////////////////////////////////////
+@include foundation-global-styles; // Reset
+@include foundation-xy-grid-classes;
+@include foundation-forms;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-table;
+
+////////////////////////////////////////////////////////////////////////////////
+// SELECTIVE INCLUDE (Start small)
+////////////////////////////////////////////////////////////////////////////////
+
+// GENERAL /////////////////////////////////////////////////////////////////////
+// @include foundation-global-styles; // NORMALIZE, CORE
+// @include foundation-xy-grid-classes; // CORE
+// @include foundation-forms; // CORE
+// @include foundation-typography; // CORE
+
+// UTILITY CLASSES /////////////////////////////////////////////////////////////
+// @include foundation-flex-classes;
+// @include foundation-visibility-classes;
+// @include foundation-float-classes;
+
+// CONTROLS ////////////////////////////////////////////////////////////////////
+// @include foundation-button; // CORE
+// @include foundation-button-group; // CORE
+// @include foundation-close-button;
+// @include foundation-switch;
+// @include foundation-slider; // JQUERY
+
+// NAVIGATION //////////////////////////////////////////////////////////////////
+// @include foundation-menu;
+// @include foundation-title-bar;
+// @include foundation-menu-icon;
+// @include foundation-pagination;
+// @include foundation-breadcrumbs;
+// @include foundation-dropdown-menu; // JQUERY
+// @include foundation-drilldown-menu; // JQUERY
+// @include foundation-accordion-menu; // JQUERY
+// @include foundation-top-bar; // JQUERY
+// @include foundation-sticky; // JQUERY
+
+// CONTAINERS //////////////////////////////////////////////////////////////
+// @include foundation-callout; // CORE
+// @include foundation-table; // CORE
+// @include foundation-card;
+// @include foundation-media-object;
+// @include foundation-dropdown; // JQUERY
+// @include foundation-accordion; // JQUERY
+// @include foundation-off-canvas; // JQUERY
+// @include foundation-reveal; // JQUERY
+// @include foundation-tabs; // JQUERY
+
+// MEDIA ///////////////////////////////////////////////////////////////////////
+// @include foundation-badge;
+// @include foundation-responsive-embed;
+// @include foundation-label;
+// @include foundation-progress-bar;
+// @include foundation-thumbnail;
+// @include foundation-orbit; // JQUERY
+// @include foundation-tooltip; // JQUERY
+
+// TRANSITIONS & ANIMATION /////////////////////////////////////////////////////
+// @include motion-ui-transitions;
+// @include motion-ui-animations;
