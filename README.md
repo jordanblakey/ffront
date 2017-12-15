@@ -4,7 +4,7 @@
 
 Start with a blazing fast build and `import` or `@include` if and when you need a feature. All scss and js utilities are modular, well documented, and easily added by uncommenting in `src/js/utils.js`, or `src/scss/app.scss`.
 
-Designed for working mobile first and keeping a small footprint, includes Sass, [Foundation](https://foundation.zurb.com/sites.html), a gesture library for working with touch events, and automatic dead code removal/minification.
+Designed for working mobile first and keeping a small footprint. Includes Sass, [Foundation](https://foundation.zurb.com/sites.html), a gesture library for working with touch events, and automatic dead code removal/minification.
 
 Includes [Jest](https://facebook.github.io/jest), a starter test suite, and code coverage reporting. Tests run with every save (for performance, checking only changed files). The standalone `yarn test` command provides detailed feedback, and runs randomized tests to identify edge cases.
 
