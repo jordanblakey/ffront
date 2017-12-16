@@ -28,7 +28,7 @@ import chalk         from 'chalk'
 // ASSIGNMENT //////////////////////////////////////////////////////////////////
 const PRODUCTION = !!yargs.argv.production
 const PLUGINS = plugins()
-const { COMPAT, PORT, UNCSS_OPTIONS, PATHS, IMAGEMIN } = yaml.load(
+const { COMPAT, PORT, UIPORT, WPORT, UNCSS_OPTIONS, PATHS, IMAGEMIN } = yaml.load(
   fs.readFileSync('config.yml', 'utf8')
 )
 
@@ -40,35 +40,32 @@ gulp.task('default', gulp.series('build', server, watch))
 
 // UTILITY FUNCTIONS ///////////////////////////////////////////////////////////
 function clean(done) { rimraf(PATHS.build, done) }
-
 function copy() {
   return gulp.src(PATHS.assets)
   .pipe(gulp.dest(PATHS.build + '/assets'))
 }
-
 function server(done) {
-  browser.init({ server: PATHS.build, port: PORT }); done()
+  browser.init({
+    server: PATHS.build,
+    port: PORT, ui: { port: UIPORT, weinre: { port: WPORT }} })
+    done()
 }
 function reload(done) { browser.reload(); done() }
-
 function sassError(err) {
   notify.onError({
     title: 'Sass Error', message: '<%= error.message %>', wait: true
   })(err)
   sfx.pop(); this.emit('end')
 }
-
 function test(done) {
   jest.runCLI({ config: { coverage: true } }, ".")
   done()
 }
-
 function pretty(done) {
   exec(`./node_modules/prettier/bin/prettier.js --single-quote --no-semi --write 'src/**/*.js' '!**/lib/**/*.js' '!**/*.min.js'`,
   function(err) { timeMsg(err, 'Autoformatted with Prettier >>') })
   done()
 }
-
 function timeMsg(err, msg) {
   const t = new Date()
   function pad(n, w, z) { z = z || '0'; n += '';
@@ -78,7 +75,7 @@ function timeMsg(err, msg) {
   else {console.log(
     '[' + chalk.gray(pad(t.getHours(), 2) +
     ':' + pad(t.getMinutes(), 2) + ':' + pad(t.getSeconds(), 2)) + ']',
-    chalk.green.bold(msg)
+    chalk.grey(msg)
   )}
 }
 
