@@ -4,10 +4,11 @@
   "description": "Lightweight, performant, extensible front-end build system.",
   "main": "gulpfile.babel.js",
   "scripts": {
+    "postinstall": "node src/assets/js/lib/fx.js",
     "dev": "gulp",
     "start": "gulp --production",
     "build": "gulp build --production",
-    "test": "jest --coverage --verbose --automock --notify"
+    "test": "jest --coverage --verbose --automock --notify --all"
   },
   "author": "Jordan Blakey",
   "license": "MIT",
@@ -27,6 +28,7 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "browser-sync": "^2.18.13",
+    "chalk": "^2.3.0",
     "gulp": "gulpjs/gulp#4.0",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-clean-css": "^3.9.0",
@@ -53,22 +55,17 @@
     "webpack-stream": "^4.0.0"
   },
   "babel": {
-    "presets": [
-      "env"
-    ]
+    "presets": ["env"]
   },
   "jest": {
-    "collectCoverage": true,
+    "collectCoverage": false,
     "collectCoverageFrom": [ "src/**/*.js", "!*.min.js", "!src/**/lib/**/*.js", "!src/**/helpers/**/*.js" ],
     "coverageThreshold": { "global": { "branches": 80, "functions": 80, "lines": 80, "statements": -10 } },
     "coverageDirectory": "node_modules/coverage",
-    "moduleFileExtensions": ["js", "jsx", "json", "ts", "tsx"],
+    "moduleFileExtensions": [ "js", "jsx", "json", "ts", "tsx" ],
     "verbose": false,
     "automock": false,
-    "notify": false
-  },
-  "eslintIgnore": [
-    "*.min.js",
-    "node_modules"
-  ]
+    "notify": false,
+    "onlyChanged": true
+  }
 }
