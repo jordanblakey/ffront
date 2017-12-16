@@ -2,7 +2,7 @@
 
 **Performant, opinionated, but friendly front-end tooling.**
 
-[![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)] [![Build Status](https://travis-ci.org/jordanblakey/ffront.svg?branch=master)](https://travis-ci.org/jordanblakey/ffront)
+![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg) [![Build Status](https://travis-ci.org/jordanblakey/ffront.svg?branch=master)](https://travis-ci.org/jordanblakey/ffront)
 
 Start with a blazing fast build and `import` or `@include` if and when you need a feature. All scss and js utilities are modular, well documented, and easily added by uncommenting in `src/js/utils.js`, or `src/scss/app.scss`.
 
