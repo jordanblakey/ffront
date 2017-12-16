@@ -59,7 +59,7 @@ function test(done) {
   done()
 }
 function pretty(done) {
-  exec("prettier --single-quote --no-semi --write 'src/**/*.js' '!**/lib/**/*.js' '!**/*.min.js'",
+  exec("./node_modules/prettier/bin/prettier.js --single-quote --no-semi --write 'src/**/*.js' '!**/lib/**/*.js' '!**/*.min.js'",
   function(err) {
     if (err) {console.error(err)}
     else {console.log('\x1b[34m\x1b[30m\x1b[1m',

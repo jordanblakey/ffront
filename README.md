@@ -4,13 +4,13 @@
 
 ![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg) [![Build Status](https://travis-ci.org/jordanblakey/ffront.svg?branch=master)](https://travis-ci.org/jordanblakey/ffront)
 
-Start with a blazing fast build and `import` or `@include` if and when you need a feature. All scss and js utilities are modular, well documented, and easily added by uncommenting in `src/js/utils.js`, or `src/scss/app.scss`.
+Start with a lightning fast build and `import` or `@include` if you need a feature. scss and js utilities are modular, well documented, and toggleable in `src/js/utils.js`, or `src/scss/app.scss`.
 
-Designed for working mobile first and keeping a small footprint. Includes Sass, [Foundation](https://foundation.zurb.com/sites.html), a gesture library for working with touch events, and automatic dead code removal/minification.
+Designed for working mobile first and keeping a small footprint. Babel transpiles ES6 out of the box. Comes with Sass, Handlebars, and a minmalist's [Foundation Sites](https://foundation.zurb.com/sites.html). There's a gesture library for working with touch, and dead code removal/minification.
 
-Includes [Jest](https://facebook.github.io/jest), a starter test suite, and code coverage reporting. Tests run with every save (for performance, checking only changed files). The standalone `yarn test` command provides detailed feedback, and runs randomized tests to identify edge cases.
+For testing, includes [Jest](https://facebook.github.io/jest) and a starter suite. While you work, tests run on every save, checking only changed files. `yarn test` uses random mocks to find edge cases and gives more detail, including code coverage.
 
-Also includes an example [Travis CI](https://travis-ci.org) config for easy continuous integration setup.
+Last, there's a [Travis CI](https://travis-ci.org) config for easy continuous integration.
 
 ## What's In the Box
 

@@ -4,9 +4,9 @@
   "description": "Lightweight, performant, extensible front-end build system.",
   "main": "gulpfile.babel.js",
   "scripts": {
-    "dev": "gulp",
-    "start": "gulp --production",
-    "build": "gulp build --production",
+    "dev": "node src/assets/js/lib/fx.js; gulp",
+    "start": "node src/assets/js/lib/fx.js; gulp --production",
+    "build": "node src/assets/js/lib/fx.js; gulp build --production",
     "test": "jest --coverage --verbose --automock --notify"
   },
   "author": "Jordan Blakey",
@@ -23,7 +23,7 @@
     "zingtouch": "^1.0.5"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
+    "babel-core": "6",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "browser-sync": "^2.18.13",
@@ -58,14 +58,33 @@
     ]
   },
   "jest": {
-    "collectCoverage": true,
-    "collectCoverageFrom": [ "src/**/*.js", "!*.min.js", "!src/**/lib/**/*.js", "!src/**/helpers/**/*.js" ],
-    "coverageThreshold": { "global": { "branches": 80, "functions": 80, "lines": 80, "statements": -10 } },
+    "collectCoverage": false,
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!*.min.js",
+      "!src/**/lib/**/*.js",
+      "!src/**/helpers/**/*.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": -10
+      }
+    },
     "coverageDirectory": "node_modules/coverage",
-    "moduleFileExtensions": ["js", "jsx", "json", "ts", "tsx"],
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json",
+      "ts",
+      "tsx"
+    ],
     "verbose": false,
     "automock": false,
-    "notify": false
+    "notify": false,
+    "onlyChanged": true
   },
   "eslintIgnore": [
     "*.min.js",
