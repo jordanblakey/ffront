@@ -4,10 +4,11 @@
   "description": "Lightweight, performant, extensible front-end build system.",
   "main": "gulpfile.babel.js",
   "scripts": {
-    "dev": "node src/assets/js/lib/fx.js; gulp",
-    "start": "node src/assets/js/lib/fx.js; gulp --production",
-    "build": "node src/assets/js/lib/fx.js; gulp build --production",
-    "test": "jest --coverage --verbose --automock --notify"
+    "postinstall": "node src/assets/js/lib/fx.js",
+    "dev": "gulp",
+    "start": "gulp --production",
+    "build": "gulp build --production",
+    "test": "jest --coverage --verbose --automock --notify --all"
   },
   "author": "Jordan Blakey",
   "license": "MIT",
@@ -27,6 +28,7 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "browser-sync": "^2.18.13",
+    "chalk": "^2.3.0",
     "gulp": "gulpjs/gulp#4.0",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-clean-css": "^3.9.0",
