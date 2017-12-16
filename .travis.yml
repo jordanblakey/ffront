@@ -75,7 +75,7 @@ language: javascript
   # - sudo /etc/init.d/postgresql stop
   # - sudo /etc/init.d/postgresql start 9.3
 
-install: yarn
+install: npm install
 
 # before_script:
   # - curl http://repo.varnish-cache.org/debian/GPG-key.txt | sudo apt-key add -
