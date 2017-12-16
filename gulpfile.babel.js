@@ -55,7 +55,7 @@ function sassError(err) {
   sfx.pop(); this.emit('end')
 }
 function test(done) {
-  jest.runCLI({ config: {coverage: true} }, ".")
+  jest.runCLI({ config: { coverage: true } }, ".")
   done()
 }
 function pretty(done) {
