@@ -23,6 +23,7 @@ import giflossy      from 'imagemin-giflossy'
 import plumber       from 'gulp-plumber'
 import notify        from 'gulp-notify'
 import sfx           from 'sfx'
+import chalk         from 'chalk'
 
 // ASSIGNMENT //////////////////////////////////////////////////////////////////
 const PRODUCTION = !!yargs.argv.production
@@ -54,11 +55,11 @@ function sassError(err) {
   sfx.pop(); this.emit('end')
 }
 function test(done) {
-  jest.runCLI({ config: {} }, ".")
+  jest.runCLI({ config: { coverage: true } }, ".")
   done()
 }
 function pretty(done) {
-  exec("prettier --write 'src/**/*.js' '!**/*.min.js'",
+  exec("prettier --single-quote --no-semi --write 'src/**/*.js' '!**/lib/**/*.js' '!**/*.min.js'",
   function(err) {
     if (err) {console.error(err)}
     else {console.log('\x1b[34m\x1b[30m\x1b[1m',

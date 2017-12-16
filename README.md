@@ -1,6 +1,8 @@
-# FFront ⏩
+# FFront `⏩`
 
 **Performant, opinionated, but friendly front-end tooling.**
+
+![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg) [![Build Status](https://travis-ci.org/jordanblakey/ffront.svg?branch=master)](https://travis-ci.org/jordanblakey/ffront)
 
 Start with a blazing fast build and `import` or `@include` if and when you need a feature. All scss and js utilities are modular, well documented, and easily added by uncommenting in `src/js/utils.js`, or `src/scss/app.scss`.
 
@@ -18,7 +20,8 @@ Also includes an example [Travis CI](https://travis-ci.org) config for easy cont
 
 ## Installation
 
-Get set up in one line:
+Requires [Node, npm](https://nodejs.org/en/), and [yarn](https://yarnpkg.com/lang/en/docs/install/).
+Then, set up is one line:
 
 ```sh
 git clone git@github.com:jordanblakey/ffront.git; cd ffront; yarn
@@ -34,4 +37,4 @@ yarn test # Run an in-depth test suite
 yarn build # Start the production build server (accurate)
 ```
 
-Happy hacking ⏩
+Happy hacking `⏩`
