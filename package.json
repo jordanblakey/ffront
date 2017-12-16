@@ -1,15 +1,13 @@
 {
-  "name": "ffront",
+  "name": "nano-front",
   "version": "1.0.0",
-  "description": "Performant, opinionated, but friendly front-end tooling.",
-  "repository": "https://github.com/jordanblakey/ffront",
-  "bugs": "https://github.com/jordanblakey/ffront/issues",
+  "description": "Lightweight, performant, extensible front-end build system.",
   "main": "gulpfile.babel.js",
   "scripts": {
     "dev": "gulp",
     "start": "gulp --production",
     "build": "gulp build --production",
-    "test": "jest --verbose --automock --notify"
+    "test": "jest --coverage --verbose --automock --notify"
   },
   "author": "Jordan Blakey",
   "license": "MIT",

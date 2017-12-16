@@ -1,4 +1,4 @@
-# FFront ⏩
+# FFront `⏩`
 
 **Performant, opinionated, but friendly front-end tooling.**
 
@@ -18,7 +18,8 @@ Also includes an example [Travis CI](https://travis-ci.org) config for easy cont
 
 ## Installation
 
-Get set up in one line:
+Requires [Node, npm](https://nodejs.org/en/), and [yarn](https://yarnpkg.com/lang/en/docs/install/).
+Then, set up is one line:
 
 ```sh
 git clone git@github.com:jordanblakey/ffront.git; cd ffront; yarn
@@ -34,4 +35,4 @@ yarn test # Run an in-depth test suite
 yarn build # Start the production build server (accurate)
 ```
 
-Happy hacking ⏩
+Happy hacking `⏩`
