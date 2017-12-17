@@ -42,7 +42,10 @@ yarn build # Start the production build server (accurate)
 FFront's layout mode exposes the box model as you work.
 
 To try it, go to src/assets/scss/app.scss and uncomment:
-`@import './foundation/_layout_mode.scss';`
+
+``` scss
+// @import './foundation/_layout_mode.scss';
+```
 
 ---
 

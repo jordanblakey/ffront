@@ -85,7 +85,7 @@ install: npm install
   # - psql -c 'create database travis_ci_test;' -U postgres
 
 
-script: npm run build; npm run test
+script: npm run test
 
 # before_cache: value  # OPTIONAL (for cleaning up cache)
 
