@@ -1,0 +1,57 @@
+// BREAKPOINT INDICATORS ///////////////////////////////////////////////////////
+html {
+  &:before {
+    font-family: 'Helvetica Neue', Helvetica, Roboto, sans-serif;
+    color: white;
+    font-weight: bold;
+    display: block;
+    padding: 0.5em 1em;
+    position:fixed;
+    z-index: 1;
+    opacity: .8
+  }
+
+  @include breakpoint(small only) {
+    &:before {
+      content: 'Small/Mobile: less than 40em';
+      background: #f85959;
+    }
+    .cell {
+      border: 1px solid #f85959;
+    }
+  }
+  @include breakpoint(medium only) {
+    &:before {
+      content: 'Medium/Tablet: greater than 40em';
+      background: #9870fc;
+    }
+    .cell {
+      border: 1px solid #9870fc;
+    }
+  }
+  @include breakpoint(large up) {
+    &:before {
+      content: 'Large/Desktop: greater than 64em';
+      background: #4586ff;
+    }
+    .cell {
+      border: 1px solid #4586ff;
+    }
+  }
+}
+
+// GRID OUTLINERS //////////////////////////////////////////////////////////////
+.cell,
+.columns {
+  background: #eee;
+  background-clip: content-box;
+}
+.grid-x,
+.grid-y,
+.row {
+  background: #ddd;
+}
+.grid-container,
+.container {
+  background: #bbb;
+}

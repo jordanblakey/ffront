@@ -6,7 +6,7 @@
 
 Start with a lightning fast build and `import` or `@include` if you need a feature. scss and js utilities are modular, well documented, and toggleable in `src/js/utils.js`, or `src/scss/app.scss`.
 
-Designed for working mobile first and keeping a small footprint. Babel transpiles ES6 out of the box. Comes with Sass, Handlebars, and a minmalist's [Foundation Sites](https://foundation.zurb.com/sites.html). There's a gesture library for working with touch, and dead code removal/minification.
+Designed for working mobile first and keeping a small footprint. Babel transpiles ES6 out of the box. Comes with Sass, Handlebars, and a minimalist's [Foundation Sites](https://foundation.zurb.com/sites.html). There's a gesture library for working with touch, and dead code removal/minification.
 
 For testing, includes [Jest](https://facebook.github.io/jest) and a starter suite. While you work, tests run on every save, checking only changed files. `yarn test` uses random mocks to find edge cases and gives more detail, including code coverage.
 
@@ -33,8 +33,20 @@ FFront has only three commands:
 
 ```sh
 yarn start # Start the development server (fast)
-yarn test # Run an in-depth test suite
+yarn test #  Run in-depth tests with coverage
 yarn build # Start the production build server (accurate)
 ```
+
+## Layout Mode
+
+FFront's layout mode exposes the box model as you work.
+
+To try it, go to src/assets/scss/app.scss and uncomment:
+
+``` scss
+// @import './foundation/_layout_mode.scss';
+```
+
+---
 
 Happy hacking `⏩`

@@ -63,20 +63,11 @@ function test(done) {
 }
 function pretty(done) {
   exec(`./node_modules/prettier/bin/prettier.js --single-quote --no-semi --write 'src/**/*.js' '!**/lib/**/*.js' '!**/*.min.js'`,
-  function(err) { timeMsg(err, 'Autoformatted with Prettier >>') })
+  function(err) {
+    if (err) { console.error(err) }
+    else { console.log(chalk.grey('Autoformatted with Prettier >>')) }
+  })
   done()
-}
-function timeMsg(err, msg) {
-  const t = new Date()
-  function pad(n, w, z) { z = z || '0'; n += '';
-    return n.length >= w ? n : new Array(w - n.length + 1).join(z) + n;
-  }
-  if (err) {console.error(err)}
-  else {console.log(
-    '[' + chalk.gray(pad(t.getHours(), 2) +
-    ':' + pad(t.getMinutes(), 2) + ':' + pad(t.getSeconds(), 2)) + ']',
-    chalk.grey(msg)
-  )}
 }
 
 // PAGES ///////////////////////////////////////////////////////////////////////
@@ -133,9 +124,9 @@ function images() {
 // WATCH ///////////////////////////////////////////////////////////////////////
 function watch() {
   gulp.watch(PATHS.assets, copy)
-  gulp.watch('src/pages/**/*.html').on('all', gulp.series(pages, reload))
+  gulp.watch('src/pages/**/*.html').on('all', gulp.series(sass, pages, reload))
   gulp.watch('src/{layouts,partials}/**/*.html').on('all', gulp.series(resetPages, pages, reload))
-  gulp.watch('src/assets/scss/**/*.scss').on('all', sass)
+  gulp.watch('src/assets/scss/**/*.scss').on('all', sass, reload)
   gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, gulp.parallel(test, reload)))
   gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, reload))
 }
