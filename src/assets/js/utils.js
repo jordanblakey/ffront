@@ -1,6 +1,6 @@
 // AXIOS ///////////////////////////////////////////////////////////////////////
 // https://www.npmjs.com/package/axios
-import axios from './lib/axios'
+// import axios from 'axios'
 
 // LODASH: Modern, Modular Utility Library /////////////////////////////////////
 // https://lodash.com/docs

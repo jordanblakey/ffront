@@ -1,3 +1,8 @@
+/**
+ * @jest-environment node
+ */
+// This lets Jest know whether to use node or jsdom as the environment
+
 ////////////////////////////////////////////////////////////////////////////////
 // JEST: Javascript Testing Platform
 // https://facebook.github.io/jest/
@@ -75,3 +80,84 @@ test('there is no I in team', () => {
 test('but there is a "stop" in Christoph', () => {
   expect('Christoph').toMatch(/stop/)
 })
+
+// ARRAY CONTENTS  /////////////////////////////////////////////////////////////
+const shoppingList = [
+  'diapers',
+  'kleenex',
+  'trash bags',
+  'paper towels',
+  'beer'
+]
+
+test('the shopping list has beer on it', () => {
+  expect(shoppingList).toContain('beer')
+})
+
+// EXCEPTION TYPE //////////////////////////////////////////////////////////////
+
+function compileAndroidCode() {
+  throw new TypeError('you are using the wrong JDK')
+}
+
+test('compiling android goes as expected', () => {
+  expect(compileAndroidCode).toThrow()
+  expect(compileAndroidCode).toThrow(TypeError)
+
+  // You can also use the exact error message or a regexp
+  expect(compileAndroidCode).toThrow('you are using the wrong JDK')
+  expect(compileAndroidCode).toThrow(/JDK/)
+})
+
+// ASYNCHRONOUS TESTS //////////////////////////////////////////////////////////
+// https://facebook.github.io/jest/docs/en/asynchronous.html
+
+// USING A CALLBACK FUNCTION ///////////////////////////////////////////////////
+function foo(bar, cb) {
+  cb(bar)
+}
+
+test('the callback data is peanut butter', done => {
+  function callback(data) {
+    expect(data).toBe('peanut butter')
+    done()
+  }
+
+  foo('peanut butter', callback)
+})
+
+// USING PROMISES VIA AXIOS ////////////////////////////////////////////////////
+import axios from 'axios'
+test('Successfully fetch GitHub user data', () => {
+  expect.assertions(1)
+  let user = 'jordanblakey'
+  return axios
+    .get(`https://api.github.com/users/${user}`)
+    .then(function(res) {
+      expect(res.data.login).toBe(user)
+    })
+    .catch(function(err) {
+      console.error(err)
+    })
+})
+
+test('Expect the request promise to resolve', () => {
+  expect.assertions(1)
+  let user = 'jordanblakey'
+  return expect(
+    axios.get(`https://api.github.com/users/${user}`).then(function(res) {
+      return res.data.login
+    })
+  ).resolves.toBe(user)
+})
+
+// test('Expect the requst promise to reject', () => {
+//   expect.assertions(1)
+//   let user = 'jordanblakey'
+//   return expect(axios.get(`https://ap.gitub.com/uers/${user}`).then(function(res){
+//     return res.data.login
+//   }).catch(function(err){
+//     console.log(err.response.status)
+//     return err.response.status
+//   })).rejects.toMatch(404);
+// })

@@ -31,4 +31,3 @@ if (elem !== null) {
   // Unbind a single gesture from a DOM element
   // zt.unbind(elem, 'doubletap');
 }
-

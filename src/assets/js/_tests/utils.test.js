@@ -1,5 +1,9 @@
+/**
+ * @jest-environment jsdom
+ */
+
 import '../utils'
-import axios from '../lib/axios'
+import axios from 'axios'
 import clipboard from 'clipboard'
 import '../lib/prism'
 import _ from 'lodash'
