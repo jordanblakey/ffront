@@ -32,4 +32,4 @@
 
 // PRISMJS: Code Highlighting for <pre> and <code> /////////////////////////////
 // http://prismjs.com
-import './lib/prism.js'
+// import './lib/prism.js'
