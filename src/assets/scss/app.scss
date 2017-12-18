@@ -1,21 +1,7 @@
-@import './foundation/foundation-sites.scss';
-// @import './foundation/_layout_mode.scss';
-
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:00,600,700|Source+Serif+Pro:400,700');
-.callout, code{
-  border-radius: 3px;
-}
-code {
-  border: 0;
-  font-size: 85%;
-  padding: 0.2em 0.4em;
-}
-.yellow {
-  color: #ffbb00;
-  font-weight: 600;
-}
-h1.yellow {
-  @include breakpoint(small only) {
-    font-size: 3rem;
-  }
-}
+@import './foundation/foundation-sites';
+@include add-foundation-colors;
+
+// @import './utils/layout_mode';
+@import './utils/prism';
+@import './utils/ffront';

@@ -65,7 +65,7 @@ function pretty(done) {
   exec(`./node_modules/prettier/bin/prettier.js --single-quote --no-semi --write 'src/**/*.js' '!**/lib/**/*.js' '!**/*.min.js'`,
   function(err) {
     if (err) { console.error(err) }
-    else { console.log(chalk.grey('Autoformatted with Prettier >>')) }
+    else { console.log(chalk.grey('Auto-formatted src/ with Prettier >>')) }
   })
   done()
 }

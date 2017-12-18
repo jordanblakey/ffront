@@ -1,0 +1,25 @@
+.callout{
+  border-radius: 3px;
+}
+code, pre {
+  @extend .callout;
+  padding: 0.2em 0.4em;
+  border: 0;
+  font-size: .85rem;
+  font-family: 'Source Code Pro';
+  background: $light-gray;
+}
+pre {
+  padding: 1rem 1.25rem !important;
+  text-indent: -5px !important;
+}
+.yellow {
+  color: $warning-color;
+  font-weight: 600;
+}
+h1.yellow {
+  @include breakpoint(small only) {
+    font-size: 3rem;
+  }
+}
+

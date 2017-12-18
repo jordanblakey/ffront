@@ -17,60 +17,76 @@
         and a starter suite. While you work, tests run on every save, checking only changed files.
         <code>yarn test</code> uses random mocks to find edge cases and give more detail, including code coverage.</p>
       <p>Last, there's a <a href="https://travis-ci.org/">Travis CI</a> config for easy continuous integration. </p>
+
+      <hr>
+      <h2 class="h4">What's In the Box</h2>
+      <p>
+        <b>Core</b>: Gulp 4 - Webpack - Babel - Jest - Prettier - BrowserSync - Panini (Handlebars) <br>
+        <b>Utilities</b>: Foundation Sites - Zingtouch - Axios - Lodash - Date-fns - Rellax - Scroll Reveal - Prism - Clipboard</p>
+      <hr>
+
+      <h2 class="h4">Usage</h2>
+      <p>FFront has only three commands:</p>
+      <pre>
+        <code class="language-bash">
+          yarn start # Start the development server (fast)
+          yarn build # Build for production and run the server (accurate)
+          yarn test # Run in-depth tests with coverage
+        </code>
+      </pre>
+      <div class="cell medium-12" style="height:2rem"></div>
+      <p class="lead yellow">Happy hacking ⏩</p>
+
+      <div class="cell medium-12" style="height:2rem"></div>
+
     </div>
 
     <div class="cell medium-6">
 
       <div class="callout">
         <h2 class="h4">Layout Mode</h2>
-        <p> <small>FFront's layout mode exposes the box model as you work.</small> </p>
+        <p> <small>FFront's layout mode exposes breakpoints &amp; the box model as you work.</small> </p>
         <p>
           <small>To try it, go to <code>src/assets/scss/app.scss</code> and uncomment: <br>
-            <code>// @import './foundation/_layout_mode.scss';</code>
+            <code>// @import './components/_layout_mode.scss';</code>
           </small>
         </p>
       </div>
 
-      <div class="callout align-self-bottom">
-          <h2 class="h4">Foundation Examples</h2>
-          <p>
-            <small>Foundation 6 For Sites is included for quick layout.
-              <br> To see what's possible, take a look at these examples:
-              <br>
-              <a href="foundation-examples/grid.html">Grid</a> -
-              <a href="foundation-examples/form.html">Forms</a> -
-              <a href="foundation-examples/typography.html">Type</a> -
-              <a href="foundation-examples/containers.html">Containers</a> -
-              <a href="foundation-examples/navigation.html">Navigation</a> -
-              <a href="foundation-examples/buttons.html">Buttons</a> -
-              <a href="foundation-examples/badges-labels-progress.html">Badges, Labels, &amp; Progress</a> -
-              <a href="foundation-examples/icons.html">Icons</a> -
-              <a href="foundation-examples/visibility-classes.html">Visibility</a>
-            </small>
-          </p>
-        </div>
-    </div>
-  </div>
-  <div class="grid-x grid-padding-x">
-    <div class="cell medium-6">
-      <hr>
-      <h2 class="h4">What's In the Box</h2>
-      <p>
-        <b>Core</b>: Gulp 4 - Webpack - Babel - Jest - Prettier - BrowserSync - Panini (Handlebars) <br>
-        <b>Utilities</b>: Foundation Sites - Zingtouch - Axios - Lodash - Date-fns - Rellax - Scroll Reveal</p>
-      <hr>
+      <div class="callout">
+        <h2 class="h4">Foundation Examples</h2>
+        <p>
+          <small>Foundation 6 For Sites is included for quick layout.
+            <br> To see what's possible, take a look at these examples:
+            <br>
+            <a href="foundation-examples/grid.html">Grid</a> -
+            <a href="foundation-examples/form.html">Forms</a> -
+            <a href="foundation-examples/typography.html">Type</a> -
+            <a href="foundation-examples/containers.html">Containers</a> -
+            <a href="foundation-examples/navigation.html">Navigation</a> -
+            <a href="foundation-examples/buttons.html">Buttons</a> -
+            <a href="foundation-examples/badges-labels-progress.html">Badges, Labels, &amp; Progress</a> -
+            <a href="foundation-examples/icons.html">Icons</a> -
+            <a href="foundation-examples/visibility-classes.html">Visibility</a>
+          </small>
+        </p>
+      </div>
 
-      <h2 class="h4">Usage</h2>
-      <p>FFront has only three commands:</p>
-      <p>
-        <code>yarn start</code> Start the development server (fast). <br>
-        <code>yarn build</code> Start the production build server (accurate). <br>
-        <code>yarn test</code> Run in-depth test with coverage.
-      </p>
-      <div class="cell medium-12" style="height:2rem"></div>
-      <p class="lead yellow">Happy hacking ⏩</p>
+      <div class="callout">
+        <h2 class="h4">Showing Code Snippets</h2>
+        <p><small>
+          Displaying code with syntax highlighting and
+          'copy to clipboard' functionality is a breeze. Prism.js and
+          Clipboard.js are included with reasonable defaults:
+        </small></p>
+        <pre><code class="language-js">
+          &lt;pre&gt;&lt;code class="language-js"&gt;
+            test('2 + 2 is 4', () => expect(2 + 2).toBe(4))
+          &lt;/code&gt;&lt;/pre&gt;
+        </code></pre>
+      </div>
 
-      <div class="cell medium-12" style="height:3rem"></div>
     </div>
+
   </div>
 </div>
