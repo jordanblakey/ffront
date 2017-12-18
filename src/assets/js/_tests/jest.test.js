@@ -127,29 +127,29 @@ test('the callback data is peanut butter', done => {
 })
 
 // USING PROMISES VIA AXIOS ////////////////////////////////////////////////////
-import axios from 'axios'
-test('Successfully fetch GitHub user data', () => {
-  expect.assertions(1)
-  let user = 'jordanblakey'
-  return axios
-    .get(`https://api.github.com/users/${user}`)
-    .then(function(res) {
-      expect(res.data.login).toBe(user)
-    })
-    .catch(function(err) {
-      console.error(err)
-    })
-})
+// import axios from 'axios'
+// test('Successfully fetch GitHub user data', () => {
+//   expect.assertions(1)
+//   let user = 'jordanblakey'
+//   return axios
+//     .get(`https://api.github.com/users/${user}`)
+//     .then(function(res) {
+//       expect(res.data.login).toBe(user)
+//     })
+//     .catch(function(err) {
+//       console.error(err)
+//     })
+// })
 
-test('Expect the request promise to resolve', () => {
-  expect.assertions(1)
-  let user = 'jordanblakey'
-  return expect(
-    axios.get(`https://api.github.com/users/${user}`).then(function(res) {
-      return res.data.login
-    })
-  ).resolves.toBe(user)
-})
+// test('Expect the request promise to resolve', () => {
+//   expect.assertions(1)
+//   let user = 'jordanblakey'
+//   return expect(
+//     axios.get(`https://api.github.com/users/${user}`).then(function(res) {
+//       return res.data.login
+//     })
+//   ).resolves.toBe(user)
+// })
 
 // test('Expect the requst promise to reject', () => {
 //   expect.assertions(1)
