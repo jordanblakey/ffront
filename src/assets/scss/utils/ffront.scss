@@ -22,4 +22,11 @@ h1.yellow {
     font-size: 3rem;
   }
 }
-
+canvas.connecting-dots {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}

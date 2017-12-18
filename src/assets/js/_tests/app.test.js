@@ -1,4 +1,7 @@
-jest.dontMock('../app')
+/**
+ * @jest-environment jsdom
+ */
+
 const sum = require('../app').sum
 
 test('adds 1 + 2 to equal 3', () => {

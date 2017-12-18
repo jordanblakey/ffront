@@ -16,15 +16,14 @@ Last, there's a [Travis CI](https://travis-ci.org) config for easy continuous in
 
 **Core**: Gulp 4 - Webpack - Babel - Jest - Prettier - BrowserSync - Panini (Handlebars)
 
-**Utilities**: Foundation Sites - Zingtouch - Axios - Lodash - Date-fns - Rellax - Scroll Reveal - Prism - Clipboard
+**Utilities**: Foundation Sites - Zingtouch - Axios - Lodash - Date-fns - Rellax - Scroll Reveal - Prism.js - Clipboard.js
 
-**Layout Mode**: FFront's layout mode exposes breakpoints & the box model as you work.
+**Layout Mode**: Exposes breakpoints & the box model as you work.
 
-**Foundation Examples**: Foundation 6 For Sites is included for quick layout. To show what's possible, there are examples for all basic usage: Grid, Forms, Type, Containers, Navigation, Buttons, Badges, Labels & Progress, Icons, and Visibility.
+**Foundation Examples**: To show what's possible, there are examples for all basic usage.
 
-**Showing Code Snippets**: Displaying code with syntax highlighting and
-'copy to clipboard' functionality is a breeze. Prism.js and
-Clipboard.js are included with reasonable defaults.
+**Code Rendering**: Easily show snippets with syntax highlighting and
+'copy to clipboard' functionality.
 
 ## Installation
 

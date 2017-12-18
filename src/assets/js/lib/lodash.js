@@ -19,3 +19,5 @@ import _ from "lodash/core";
 // import seq from 'lodash/seq'
 // import string from 'lodash/string'
 // import util from 'lodash/util'
+
+export { _ }
