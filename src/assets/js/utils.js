@@ -12,16 +12,24 @@
 
 // ZINGTOUCH: Multi-Touch Gesture Library //////////////////////////////////////
 // https://github.com/zingchart/zingtouch
-// import "./lib/zingtouch";
+// import "./lib/zingtouch"
 
 // SCROLL REVEAL: Viewport Entry Effect Library ////////////////////////////////
 // https://github.com/jlmakes/scrollreveal
-// import "./lib/scrollreveal";
+// import "./lib/scrollreveal"
 
 // RELLAX: Performant Parallax Library /////////////////////////////////////////
 // https://github.com/dixonandmoe/rellax
-// import "./lib/rellax.js";
+// import "./lib/rellax.js"
 
 // NANOBAR: Very lightweight progress bars /////////////////////////////////////
 // http://nanobar.jacoborus.codes/
-// import "./lib/nanobar.js";
+// import "./lib/nanobar.js"
+
+// CLIPBOARDJS: Manage the clipboard with JS ///////////////////////////////////
+// https://clipboardjs.com/
+import clipboard from 'clipboard'
+
+// PRISMJS: Code Highlighting for <pre> and <code> /////////////////////////////
+// http://prismjs.com
+import './lib/prism.js'

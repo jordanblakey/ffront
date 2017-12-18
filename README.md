@@ -16,7 +16,7 @@ Last, there's a [Travis CI](https://travis-ci.org) config for easy continuous in
 
 **Core**: Gulp 4 - Webpack - Babel - Jest - Prettier - BrowserSync - Panini (Handlebars)
 
-**Utilities**: Foundation Sites - Zingtouch - Axios - Lodash - Date-fns - Rellax - Scroll Reveal
+**Utilities**: Foundation Sites - Zingtouch - Axios - Lodash - Date-fns - Rellax - Scroll Reveal - Prism - Clipboard
 
 ## Installation
 
@@ -33,18 +33,18 @@ FFront has only three commands:
 
 ```sh
 yarn start # Start the development server (fast)
+yarn build # Build for production and run the server (accurate)
 yarn test #  Run in-depth tests with coverage
-yarn build # Start the production build server (accurate)
 ```
 
 ## Layout Mode
 
-FFront's layout mode exposes the box model as you work.
+FFront's layout mode exposes breakpoints & the box model as you work.
 
 To try it, go to src/assets/scss/app.scss and uncomment:
 
 ``` scss
-// @import './foundation/_layout_mode.scss';
+// @import './components/_layout_mode.scss';
 ```
 
 ---
