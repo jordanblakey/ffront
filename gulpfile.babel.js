@@ -77,8 +77,8 @@ function pages() {
     root:     'src/pages/',
     layouts:  'src/layouts/',
     partials: 'src/partials/',
-    data:     'src/assets/data/',
-    helpers:  'src/assets/helpers/'
+    data:     'src/data/',
+    helpers:  'src/helpers/'
   }))
   .pipe(gulp.dest(PATHS.build))
 }

@@ -10,7 +10,7 @@ import _ from 'lodash'
 import dateFns from 'date-fns'
 import ZingTouch from 'zingtouch'
 import ScrollReveal from 'scrollreveal'
-import Rellax from "rellax";
+import Rellax from 'rellax'
 import Nanobar from 'nanobar'
 
 test('prism.js imports correctly', () => {
