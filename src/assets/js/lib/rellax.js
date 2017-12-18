@@ -1,6 +1,7 @@
 // RELLAX: Parallax Library ////////////////////////////////////////////////////
 // https://github.com/dixonandmoe/rellax
 import Rellax from "rellax";
+export { Rellax }
 
 const rellax = new Rellax(".rellax", {
   speed: -2,

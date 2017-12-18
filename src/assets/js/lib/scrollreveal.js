@@ -1,6 +1,7 @@
 // SCROLL REVEAL ///////////////////////////////////////////////////////////////
 // https://github.com/jlmakes/scrollreveal
 import ScrollReveal from "scrollreveal";
+export { ScrollReveal }
 
 const srOptions = {
   origin: "bottom", // 'bottom', 'left', 'top', 'right'
@@ -25,7 +26,10 @@ const srOptions = {
 
 window.sr = ScrollReveal(srOptions);
 // Basic usage
-sr.reveal(".sr-target");
+if (typeof window.sr !== 'undefined') {
+  sr.reveal(".sr-target");
+}
 
 // Fires all selector matches on 50 ms offset from first reveal
 // sr.reveal('.sr-target', 50)
+

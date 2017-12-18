@@ -1,35 +1,35 @@
 // AXIOS ///////////////////////////////////////////////////////////////////////
 // https://www.npmjs.com/package/axios
-// import axios from 'axios'
+import axios from './lib/axios'
 
 // LODASH: Modern, Modular Utility Library /////////////////////////////////////
 // https://lodash.com/docs
-// import './lib/lodash'
+import './lib/lodash'
 
 // DATE-FNS: Modular Date Utility Library //////////////////////////////////////
 // https://date-fns.org/
-// import './lib/date-fns'
+import './lib/date-fns'
 
 // ZINGTOUCH: Multi-Touch Gesture Library //////////////////////////////////////
 // https://github.com/zingchart/zingtouch
-// import "./lib/zingtouch"
+import './lib/zingtouch'
 
 // SCROLL REVEAL: Viewport Entry Effect Library ////////////////////////////////
 // https://github.com/jlmakes/scrollreveal
-// import "./lib/scrollreveal"
+import './lib/scrollreveal'
 
 // RELLAX: Performant Parallax Library /////////////////////////////////////////
 // https://github.com/dixonandmoe/rellax
-// import "./lib/rellax.js"
+import './lib/rellax'
 
 // NANOBAR: Very lightweight progress bars /////////////////////////////////////
 // http://nanobar.jacoborus.codes/
-// import "./lib/nanobar.js"
+import './lib/nanobar'
 
 // CLIPBOARDJS: Manage the clipboard with JS ///////////////////////////////////
 // https://clipboardjs.com/
-// import clipboard from 'clipboard'
+import clipboard from 'clipboard'
 
 // PRISMJS: Code Highlighting for <pre> and <code> /////////////////////////////
 // http://prismjs.com
-// import './lib/prism.js'
+import './lib/prism'
