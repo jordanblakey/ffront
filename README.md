@@ -18,6 +18,14 @@ Last, there's a [Travis CI](https://travis-ci.org) config for easy continuous in
 
 **Utilities**: Foundation Sites - Zingtouch - Axios - Lodash - Date-fns - Rellax - Scroll Reveal - Prism - Clipboard
 
+**Layout Mode**: FFront's layout mode exposes breakpoints & the box model as you work.
+
+**Foundation Examples**: Foundation 6 For Sites is included for quick layout. To show what's possible, there are examples for all basic usage: Grid, Forms, Type, Containers, Navigation, Buttons, Badges, Labels & Progress, Icons, Visibility
+
+**Showing Code Snippets**: Displaying code with syntax highlighting and
+'copy to clipboard' functionality is a breeze. Prism.js and
+Clipboard.js are included with reasonable defaults.
+
 ## Installation
 
 Requires [Node, npm](https://nodejs.org/en/), and [yarn](https://yarnpkg.com/lang/en/docs/install/).
@@ -37,37 +45,6 @@ yarn build # Build for production and run the server (accurate)
 yarn test #  Run in-depth tests with coverage
 ```
 
-Happy hacking `⏩`
-
 ---
 
-## Additional Features
-
-### Layout Mode
-
-FFront's layout mode exposes breakpoints & the box model as you work.
-
-To try it, go to src/assets/scss/app.scss and uncomment:
-
-``` scss
-// @import './components/_layout_mode.scss';
-```
-
-### Foundation Examples
-
-Foundation 6 For Sites is included for quick layout.
-To show what's possible, there are examples for all basic usage:
-
-Grid - Forms - Type - Containers - Navigation - Buttons - Badges, Labels, & Progress - Icons - Visibility
-
-### Showing Code Snippets
-
-Displaying code with syntax highlighting and
-'copy to clipboard' functionality is a breeze. Prism.js and
-Clipboard.js are included with reasonable defaults:
-
-``` html
-<pre><code class="language-js">
-  test('2 + 2 is 4', () => expect(2 + 2).toBe(4))
-</code></pre>
-```
+Happy hacking `⏩`
