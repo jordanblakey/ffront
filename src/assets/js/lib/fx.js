@@ -1,13 +1,8 @@
 // FFRONT POST-INSTALL LOGO ////////////////////////////////////////////////////
 const chalk = require('chalk')
-const ff = `__ __
-\\ \\\\ \\
- \\ \\\\ \\
- / // /
-/_//_/  FFRONT
-`
+const ff = `
+FFRONT >>`
 console.log(chalk.yellow.bold(ff))
-
 
 // GULP ERROR FIX (TEMP) ///////////////////////////////////////////////////////
 const fs = require('fs')
