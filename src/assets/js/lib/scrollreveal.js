@@ -26,10 +26,9 @@ const srOptions = {
 
 window.sr = ScrollReveal(srOptions);
 // Basic usage
-if (typeof window.sr !== 'undefined') {
+if (document.querySelector('.sr-target') !== null) {
   sr.reveal(".sr-target");
+
+  // Fires all selector matches on 50 ms offset from first reveal
+  // sr.reveal('.sr-target', 50)
 }
-
-// Fires all selector matches on 50 ms offset from first reveal
-// sr.reveal('.sr-target', 50)
-
