@@ -28,7 +28,7 @@
 
 // CLIPBOARDJS: Manage the clipboard with JS ///////////////////////////////////
 // https://clipboardjs.com/
-import clipboard from 'clipboard'
+// import clipboard from 'clipboard'
 
 // PRISMJS: Code Highlighting for <pre> and <code> /////////////////////////////
 // http://prismjs.com
