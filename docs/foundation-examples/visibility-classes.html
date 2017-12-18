@@ -1,0 +1,66 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FFront ⏩</title>
+    <link rel="stylesheet" href="../assets/css/app.css">
+    <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAK4SURBVHgB7dy9LgRhGIbhd0VBqVWptU6AI8GRcQjUCk5ASUsnoVDSrXyFQrB/M/P+fM99JXrJcye7OzPfzOY3NjfI2jJIIwBxBCCOAMQRgDgCEEcA4ghAHAGIIwBxBCCOAMQRgDgCEEcA4ghAHAGIIwBxBCCOAMQRgDgCEEcA4ghAHAGI8wtg79hs98BSaf+TOL8A2vhHt7ki2D81O7wwZb4fATsHCSM4k47A/zsAEaQS8yWQCNKI+xVABCnE/gwkgnDx1wGIIFSOC0FEECbPlUAiCJHrUjARuMt3L4AIXOW8GUQEbvLeDSQCF7lvBxPB5PI/D0AEk6rxQAgRTKbOE0FEMIlaj4QRwejqPRNIBKOq+VAoEYym7lPBRDCK2o+FE8Fg9c8FEMEgfRwMIYKN9XMyiAg20tfRMCJYW39nA4lgLX0eDiWClfV7OpgIVtL38XAiWKr/9wMQwUIaL4gggn/pvCGECP6k9YoYIvhF7x1BRPDDtin6juDz2dJoETSP5+ZJM4CmRdD+MgmIgNfEZTMzV7oBfDybvd9ZKi+XZg++HwGaAbTx709yfQcIGL/RC4Dxf9AKgPF/0QmA8f+kEQDj/6v/ABh/ob4DYPyl+g2A8VfSZwCMv7L+AmD8tfQVAOOvrZ8AGH8jfQTA+BurHwDjD1I7AMYfrG4AjD+KmgEw/mjqBcD4o6oVAOOPrk4AjD+JGgEw/mTyB8D4k8odAONPLm8AjO8iZwCM7yZfAIzvKlcAjO8uTwCMHyJHAIwfJj4Axg8VGwDjh4sLgPFTiAmA8dPwD4DxU/ENgPHT8XtL2MdTvvFfr83erkzZbH5jc4Os+ucCMAgBiCMAcQQgjgDEEYA4AhBHAOIIQBwBiCMAcQQgjgDEEYA4AhBHAOIIQBwBiCMAcQQgjgDEEYA4AhBHAOIIQNwXURB6K5uyOm0AAAAASUVORK5CYII&#x3D;" />
+  </head>
+  <body>
+
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <div class="cell">
+          <h1>Visibility Classes (Responsive)</h1>
+    
+          <h3>.show-for-x</h3>
+          <p>You are on a small screen or larger.</p>
+          <p class="show-for-medium">You are on a medium screen or larger.</p>
+          <p class="show-for-large">You are on a large screen or larger.</p>
+    
+          <h3>.hide-for-x</h3>
+          <p class="hide-for-medium">You are
+            <em>not</em> on a medium screen or larger.</p>
+          <p class="hide-for-large">You are
+            <em>not</em> on a large screen or larger.</p>
+    
+          <h3>.hide-for-x only</h3>
+          <p class="hide-for-small-only">You are
+            <em>definitely not</em> on a small screen.</p>
+          <p class="hide-for-medium-only">You are
+            <em>definitely not</em> on a medium screen.</p>
+          <p class="hide-for-large-only">You are
+            <em>definitely not</em> on a large screen.</p>
+    
+          <h3>.hide, .invisible</h3>
+          <p class="hide">Can't touch this.</p>
+          <p class="invisible">Can sort of touch this.</p>
+    
+          <h3>.show-for-[portrait, landscape]</h3>
+          <p class="show-for-landscape">You are in landscape orientation.</p>
+          <p class="show-for-portrait">You are in portrait orientation.</p>
+    
+          <h3>.show-for-sr</h3>
+          <p class="show-for-sr">This text can only be read by a screen reader.</p>
+          <p>There's a line of text above this one, but it can only be read by a screen reader.</p>
+    
+          <h3>.show-on-focus</h3>
+          Press tab
+          <p>
+            <a class="show-on-focus" href="#mainContent">Skip to Content</a>
+          </p>
+          <header id="header" role="banner">
+          </header>
+          <main id="mainContent" role="main" tabindex="0">
+          </main>
+    
+        </div>
+      </div>
+    </div>
+
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/utils.js"></script>
+  </body>
+</html>

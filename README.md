@@ -16,7 +16,7 @@ Last, there's a [Travis CI](https://travis-ci.org) config for easy continuous in
 
 **Core**: Gulp 4 - Webpack - Babel - Jest - Prettier - BrowserSync - Panini (Handlebars)
 
-**Utilities**: Foundation Sites - Zingtouch - Axios - Lodash - Date-fns - Rellax - Scroll Reveal - Prism.js - Clipboard.js
+**Utilities**: Foundation Sites - Zingtouch - Axios - Lodash - Date-fns - Rellax - Scroll Reveal - Prism.js - Clipboard.js - Jasmine-check
 
 **Layout Mode**: Exposes breakpoints & the box model as you work.
 
