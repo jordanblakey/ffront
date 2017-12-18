@@ -20,7 +20,7 @@ Last, there's a [Travis CI](https://travis-ci.org) config for easy continuous in
 
 **Layout Mode**: FFront's layout mode exposes breakpoints & the box model as you work.
 
-**Foundation Examples**: Foundation 6 For Sites is included for quick layout. To show what's possible, there are examples for all basic usage: Grid, Forms, Type, Containers, Navigation, Buttons, Badges, Labels & Progress, Icons, Visibility
+**Foundation Examples**: Foundation 6 For Sites is included for quick layout. To show what's possible, there are examples for all basic usage: Grid, Forms, Type, Containers, Navigation, Buttons, Badges, Labels & Progress, Icons, and Visibility.
 
 **Showing Code Snippets**: Displaying code with syntax highlighting and
 'copy to clipboard' functionality is a breeze. Prism.js and
