@@ -1,7 +1,6 @@
 // RELLAX: Parallax Library ////////////////////////////////////////////////////
 // https://github.com/dixonandmoe/rellax
 import Rellax from "rellax";
-export { Rellax }
 
 if (document.querySelector('.rellax') !== null) {
   const rellax = new Rellax(".rellax", {

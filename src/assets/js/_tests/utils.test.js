@@ -8,10 +8,10 @@ import clipboard from 'clipboard'
 import '../lib/prism'
 import _ from 'lodash'
 import dateFns from 'date-fns'
-import { ZingTouch } from '../lib/zingtouch'
-import { ScrollReveal } from '../lib/scrollreveal'
-import { Rellax } from '../lib/rellax'
-import { Nanobar } from '../lib/nanobar'
+import ZingTouch from 'zingtouch'
+import ScrollReveal from 'scrollreveal'
+import Rellax from "rellax";
+import Nanobar from 'nanobar'
 
 test('prism.js imports correctly', () => {
   expect(typeof Prism).toBe('object')

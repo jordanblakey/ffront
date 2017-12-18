@@ -1,7 +1,6 @@
 // ZINGTOUCH: Multi-Touch Gesture Library //////////////////////////////////////
 // https://github.com/zingchart/zingtouch
 import ZingTouch from "zingtouch"
-export { ZingTouch }
 
 // Instantiate a touch region and DOM target
 const zt = new ZingTouch.Region(document.body)

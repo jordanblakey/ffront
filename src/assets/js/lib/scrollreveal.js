@@ -1,7 +1,6 @@
 // SCROLL REVEAL ///////////////////////////////////////////////////////////////
 // https://github.com/jlmakes/scrollreveal
 import ScrollReveal from "scrollreveal";
-export { ScrollReveal }
 
 const srOptions = {
   origin: "bottom", // 'bottom', 'left', 'top', 'right'
