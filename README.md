@@ -1,6 +1,6 @@
 # FFront `⏩`
 
-**Performant, opinionated, but friendly front-end tooling.**
+**Performant, opinionated, but friendly front-end toolset.**
 
 ![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg) [![Build Status](https://travis-ci.org/jordanblakey/ffront.svg?branch=master)](https://travis-ci.org/jordanblakey/ffront)
 
@@ -14,9 +14,14 @@ Last, there's a [Travis CI](https://travis-ci.org) config for easy continuous in
 
 ## What's In the Box
 
-**Core**: Gulp 4 - Webpack - Babel - Jest - Prettier - BrowserSync - Panini (Handlebars)
+**Core**:
+Gulp 4 - Webpack - Babel - BrowserSync - Handlebars - Foundation 6
 
-**Utilities**: Foundation Sites - Zingtouch - Axios - Lodash - Date-fns - Rellax - Scroll Reveal - Prism.js - Clipboard.js - Jasmine-check
+**Code Style & TDD**:
+Prettier - Jest - Jasmine Check
+
+**Utilities**:
+Axios - Zingtouch - Lodash - Date-fns - Rellax - Scroll Reveal - Prism - Clipboard
 
 **Layout Mode**: Exposes breakpoints & the box model as you work.
 
