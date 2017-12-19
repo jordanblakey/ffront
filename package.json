@@ -1,7 +1,10 @@
 {
-  "name": "nano-front",
-  "version": "1.0.0",
+  "name": "ffront",
+  "version": "0.0.2",
   "description": "Lightweight, performant, extensible front-end build system.",
+  "homepage": "https://jordanblakey.github.io/ffront/",
+  "repository": "git@github.com:jordanblakey/ffront.git",
+  "bugs": "https://github.com/jordanblakey/ffront/issues",
   "main": "gulpfile.babel.js",
   "scripts": {
     "postinstall": "node src/assets/js/lib/fx.js",
