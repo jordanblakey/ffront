@@ -29,5 +29,5 @@ if (document.querySelector('.sr-target') !== null) {
   sr.reveal(".sr-target");
 
   // Fires all selector matches on 50 ms offset from first reveal
-  // sr.reveal('.sr-target', 50)
+  sr.reveal('.sr-target-2', 50)
 }

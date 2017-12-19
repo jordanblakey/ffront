@@ -24,7 +24,7 @@ import './lib/rellax.js'
 
 // NANOBAR: Very lightweight progress bars /////////////////////////////////////
 // http://nanobar.jacoborus.codes/
-// import './lib/nanobar.js'
+import './lib/nanobar.js'
 
 // CLIPBOARDJS: Manage the clipboard with JS ///////////////////////////////////
 // https://clipboardjs.com/

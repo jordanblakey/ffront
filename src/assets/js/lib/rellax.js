@@ -9,10 +9,6 @@ if (document.querySelector('.rellax') !== null) {
     round: true,
     vertical: true,
     horizontal: false
-    // callback: function(positions) {
-    //   // callback every position change
-    //   console.log(positions)
-    // }
   });
 
   // EXAMPLES ////////////////////////////////////////////////////////////////////
