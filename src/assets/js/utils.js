@@ -16,7 +16,7 @@ import './lib/zingtouch'
 
 // SCROLL REVEAL: Viewport Entry Effect Library ////////////////////////////////
 // https://github.com/jlmakes/scrollreveal
-// import './lib/scrollreveal'
+import './lib/scrollreveal'
 
 // RELLAX: Performant Parallax Library /////////////////////////////////////////
 // https://github.com/dixonandmoe/rellax
