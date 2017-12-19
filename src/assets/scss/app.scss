@@ -2,6 +2,6 @@
 @import './foundation/foundation-sites';
 @include add-foundation-colors;
 
-// @import './utils/layout_mode';
+@import './utils/layout_mode';
 @import './utils/prism';
 @import './utils/ffront';

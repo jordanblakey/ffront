@@ -1,6 +1,8 @@
-.callout{
+.outline, .callout {
+  border: 1px solid $medium-gray;
   border-radius: 3px;
 }
+
 code, pre {
   @extend .callout;
   padding: 0.2em 0.4em;
@@ -24,7 +26,7 @@ h1.yellow {
 }
 canvas.connecting-dots {
   pointer-events: none;
-  position: absolute;
+  position: fixed;
   z-index: -1;
   width: 100%;
   height: 100%;
@@ -33,3 +35,4 @@ canvas.connecting-dots {
   left: 0;
   bottom: 0;
 }
+

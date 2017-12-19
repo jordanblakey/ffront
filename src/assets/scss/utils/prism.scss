@@ -10,7 +10,6 @@ http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascr
  pre[class*="language-"] {
    color: black;
    background: none;
-   text-shadow: 0 1px white;
    text-align: left;
    white-space: pre;
    word-spacing: normal;
@@ -106,7 +105,7 @@ http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascr
  .language-css .token.string,
  .style .token.string {
    color: #a67f59;
-   background: hsla(0, 0%, 100%, .5);
+  //  background: rgba(248, 137, 137, 0.5);
  }
 
  .token.atrule,
