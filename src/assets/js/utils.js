@@ -33,3 +33,7 @@ import './lib/rellax.js'
 // PRISMJS: Code Highlighting for <pre> and <code> /////////////////////////////
 // http://prismjs.com
 import './lib/prism.js'
+
+// WHATINPUT: Utility to track the current input method ////////////////////////
+// https://github.com/ten1seven/what-input
+import whatInput from 'what-input'

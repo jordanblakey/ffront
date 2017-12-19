@@ -107,7 +107,7 @@ html {
 div, p, h1, h2, h3, h4, h5, h6, pre, ol, ul, blockquote, dl, fieldset, form, hr, table, code, span {
   border-radius: 0 !important;
   > *:hover {
-    border-color: #ffbb00 !important;
+    border-color: $warning-color !important;
     border-style: solid !important;
 
   }
