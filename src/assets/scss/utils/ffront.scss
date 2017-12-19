@@ -1,6 +1,12 @@
+// WELCOME PAGE ////////////////////////////////////////////////////////////////
+
+.radius {
+  border-radius: 3px;
+}
+
 .outline, .callout {
   border: 1px solid $medium-gray;
-  border-radius: 3px;
+  @extend .radius
 }
 
 code, pre {
@@ -36,3 +42,61 @@ canvas.connecting-dots {
   bottom: 0;
 }
 
+// FORMS ///////////////////////////////////////////////////////////////////////
+
+input, select, button, .button, fieldset, textarea, input[type] {
+  @extend .radius
+}
+
+select {
+  line-height: 100%;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  margin: 0;
+  vertical-align: middle;
+}
+
+.input-group {
+  *:first-child {
+    border-radius: 3px 0 0 3px;
+  }
+  *:last-child {
+    border-radius: 0 3px 3px 0;
+  }
+
+  input:not(:first-child), input:not(:last-child) {
+    border-radius: 0;
+  }
+}
+
+// BUTTONS, BADGES, LABELS, PROGRESS ///////////////////////////////////////////
+
+.button-group .button {
+  margin: 0 1.5px;
+}
+
+.badge {
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: .7rem;
+  line-height: 1.3rem;
+  height: 1.3rem;
+  width: 1.3rem;
+  min-width: 1rem;
+  padding: 0;
+  margin-bottom: .3em;
+}
+
+.label, .progress, .progress-meter {
+  border-radius: 2px;
+  font-weight: bold;
+  i {
+    margin-right: .2rem;
+    font-size: 1rem;
+    vertical-align: text-top;
+  }
+}
+.progress-meter-text {
+  transform: translate(-50%, -51%)
+}

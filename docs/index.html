@@ -10,12 +10,20 @@
   </head>
   <body>
 
+    
     <div class="grid-container">
       <div class="grid-x grid-padding-x">
-        <div class="cell medium-12" style="height:2rem"></div>
-        <div class="cell medium-12">
+        <div class="cell" style="height:2rem"></div>
+        <div class="cell auto">
           <h1 class="yellow">FFront ⏩</h1>
         </div>
+        <div class="cell shrink text-right align-self-bottom">
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
         <div class="cell medium-6">
           <p class="lead">Performant, opinionated, but friendly front-end toolset.</p>
           <p>Start with a lightning fast build and import or @include if you need a feature. scss and js utilities are modular,
@@ -39,7 +47,7 @@
             Prettier, Jest, Jasmine Check<br>
     
             <b>Utilities</b>:
-            Axios, Zingtouch, Lodash, Date-fns, Rellax, Scrollreveal, Prism, Clipboard
+            Axios, Zingtouch, Lodash, Date-fns, Rellax, Scrollreveal, Prism, Clipboard, WhatInput
           <hr>
     
           <h2 class="h4">Usage</h2>
@@ -66,6 +74,7 @@
             <p>To try it, go to <code>src/assets/scss/app.scss</code> and uncomment: <br>
               <code>// @import './components/_layout_mode.scss';</code>
             </p>
+            <img class="outline" src="assets/img/layout-mode.png" alt="Layout Mode screenshot">
           </div>
     
           <div class="callout">
@@ -74,14 +83,14 @@
               Foundation 6 For Sites is included for quick layout.
                 <br> To see what's possible, take a look at these examples:
                 <br>
-                <a href="foundation-examples/grid.html">Grid</a>,
-                <a href="foundation-examples/form.html">Forms</a>,
-                <a href="foundation-examples/typography.html">Type</a>,
-                <a href="foundation-examples/containers.html">Containers</a>,
-                <a href="foundation-examples/navigation.html">Navigation</a>,
-                <a href="foundation-examples/buttons.html">Buttons</a>,
-                <a href="foundation-examples/badges-labels-progress.html">Badges, Labels, &amp; Progress</a>,
-                <a href="foundation-examples/icons.html">Icons</a>,
+                <a href="foundation-examples/grid.html">Grid</a> |
+                <a href="foundation-examples/form.html">Forms</a> |
+                <a href="foundation-examples/typography.html">Type</a> |
+                <a href="foundation-examples/containers.html">Containers</a> |
+                <a href="foundation-examples/navigation.html">Navigation</a> |
+                <a href="foundation-examples/buttons.html">Buttons</a> |
+                <a href="foundation-examples/badges-labels-progress.html">Badges, Labels, &amp; Progress</a> |
+                <a href="foundation-examples/icons.html">Icons</a> |
                 <a href="foundation-examples/visibility-classes.html">Visibility</a>
             </p>
           </div>
@@ -97,6 +106,13 @@
                 test('2 + 2 is 4', () => expect(2 + 2).toBe(4))
               &lt;/code&gt;&lt;/pre&gt;
             </code></pre>
+          </div>
+    
+          <div class="callout">
+            <h2 class="h4">Masonry Grid</h2>
+            <p>Easily display images in a beautiful <a href="experiments/masonry-grid.html">masonry style photo grid</a> using CSS Grid.
+            </p>
+    
           </div>
     
         </div>

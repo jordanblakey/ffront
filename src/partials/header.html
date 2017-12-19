@@ -1,8 +1,19 @@
 <div class="grid-container">
   <div class="grid-x grid-padding-x">
-    <div class="cell medium-12" style="height:2rem"></div>
-    <div class="cell medium-12">
+    <div class="cell" style="height:2rem"></div>
+    <div class="cell auto">
+      {{#ifpage 'index'}}
       <h1 class="yellow">{{title}}</h1>
+      {{/ifpage}}
+      {{#unlesspage 'index'}}
+      <h1>{{title}}</h1>
+      {{/unlesspage}}
+    </div>
+    <div class="cell shrink text-right align-self-bottom">
+      {{#unlesspage 'index'}}
+        <a class="button" style="margin-bottom:1.5rem;" href="{{root}}">Back</a>
+      {{/unlesspage}}
     </div>
   </div>
+  <hr>
 </div>

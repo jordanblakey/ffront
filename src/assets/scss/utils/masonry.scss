@@ -1,0 +1,30 @@
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-gap: 3px;
+  grid-auto-rows: minmax(120px, auto);
+  grid-auto-flow: dense;
+  padding: 10px;
+  width: 100%;
+}
+
+.grid-item {
+  padding: 1rem;
+  text-transform: uppercase;
+  color: rgba(0,0,0,0);
+  background-color: #333;
+  border-radius: 3px;
+  &:nth-child(odd) {
+      background-color: #424242;
+  }
+}
+
+.span-2 {
+  grid-column-end: span 2;
+  grid-row-end: span 2;
+}
+
+.span-3 {
+  grid-column-end: span 3;
+  grid-row-end: span 4;
+}
