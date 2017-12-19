@@ -1,5 +1,4 @@
 // WELCOME PAGE ////////////////////////////////////////////////////////////////
-
 .radius {
   border-radius: 3px;
 }
@@ -17,10 +16,14 @@ code, pre {
   font-family: 'Source Code Pro';
   background: $light-gray;
 }
+small code {
+    font-size: .75rem;
+}
 pre {
   padding: 1rem 1.25rem !important;
   text-indent: -5px !important;
 }
+
 .yellow {
   color: $warning-color;
   font-weight: 600;
@@ -30,7 +33,8 @@ h1.yellow {
     font-size: 3rem;
   }
 }
-canvas.connecting-dots {
+
+.connecting-dots canvas, canvas.connecting-dots {
   pointer-events: none;
   position: fixed;
   z-index: -1;
@@ -40,10 +44,12 @@ canvas.connecting-dots {
   right: 0;
   left: 0;
   bottom: 0;
+  @include breakpoint(small only) {
+    // opacity: 0
+  }
 }
 
-// FORMS ///////////////////////////////////////////////////////////////////////
-
+// FOUNDATION FORMS ////////////////////////////////////////////////////////////
 input, select, button, .button, fieldset, textarea, input[type] {
   @extend .radius
 }
@@ -71,7 +77,6 @@ input[type="checkbox"], input[type="radio"] {
 }
 
 // BUTTONS, BADGES, LABELS, PROGRESS ///////////////////////////////////////////
-
 .button-group .button {
   margin: 0 1.5px;
 }
@@ -99,4 +104,45 @@ input[type="checkbox"], input[type="radio"] {
 }
 .progress-meter-text {
   transform: translate(-50%, -51%)
+}
+
+// MASONRY /////////////////////////////////////////////////////////////////////
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-gap: 3px;
+  grid-auto-rows: minmax(120px, auto);
+  grid-auto-flow: dense;
+  padding: 10px;
+  width: 100%;
+}
+
+.grid-item {
+  padding: 1rem;
+  text-transform: uppercase;
+  color: rgba(0,0,0,0);
+  background-color: #333;
+  border-radius: 3px;
+  &:nth-child(odd) {
+      background-color: #424242;
+  }
+}
+
+.span-2 {
+  grid-column-end: span 2;
+  grid-row-end: span 2;
+}
+
+.span-3 {
+  grid-column-end: span 3;
+  grid-row-end: span 4;
+}
+
+// CRISP RESPONSIVE IMAGES /////////////////////////////////////////////////////
+img {
+  image-rendering: -moz-crisp-edges;         /* Firefox */
+  image-rendering:   -o-crisp-edges;         /* Opera */
+  image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
 }

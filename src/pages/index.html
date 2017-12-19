@@ -31,6 +31,7 @@ title: FFront ⏩
 
         <b>Utilities</b>:
         Axios, Zingtouch, Lodash, Date-fns, Rellax, Scrollreveal, Prism, Clipboard, WhatInput
+        </p>
       <hr>
 
       <h2 class="h4">Usage</h2>
@@ -52,18 +53,20 @@ title: FFront ⏩
     <div class="cell medium-6">
 
       <div class="callout">
-        <h2 class="h4">Layout Mode</h2>
-        <p>FFront's layout mode exposes breakpoints &amp; the box model as you work.</p>
-        <p>To try it, go to <code>src/assets/scss/app.scss</code> and uncomment: <br>
-          <code>// @import './components/_layout_mode.scss';</code>
-        </p>
-        <img class="outline" src="{{root}}assets/img/layout-mode.png" alt="Layout Mode screenshot">
+        <h3 class="h5">Layout Mode</h3>
+
+          <p><small>FFront's layout mode exposes breakpoints &amp; the box model as you work.</small></p>
+          <p><small>To try it, go to <code>src/assets/scss/app.scss</code> and uncomment: <br>
+            <code>// @import './components/_layout_mode.scss';</code>
+          </small></p>
+          <img class="outline" src="{{root}}assets/img/layout-mode.png" alt="Layout Mode screenshot">
       </div>
 
       <div class="callout">
-        <h2 class="h4">Foundation Examples</h2>
+        <h2 class="h5">Foundation Examples</h2>
         <p>
-          Foundation 6 For Sites is included for quick layout.
+          <small>
+            Foundation 6 For Sites is included for quick layout.
             <br> To see what's possible, take a look at these examples:
             <br>
             <a href="{{root}}foundation-examples/grid.html">Grid</a> |
@@ -75,27 +78,39 @@ title: FFront ⏩
             <a href="{{root}}foundation-examples/badges-labels-progress.html">Badges, Labels, &amp; Progress</a> |
             <a href="{{root}}foundation-examples/icons.html">Icons</a> |
             <a href="{{root}}foundation-examples/visibility-classes.html">Visibility</a>
+          </small>
         </p>
       </div>
 
       <div class="callout">
-        <h2 class="h4">Code Rendering</h2>
-        <p>Displaying code with syntax highlighting and
+        <h3 class="h5">Code Rendering</h3>
+        <p><small>
+          Displaying code with syntax highlighting and
           'copy to clipboard' functionality is a breeze. Prism.js and
           Clipboard.js are included with reasonable defaults:
-        </p>
-        <pre><code class="language-js">
+        </small></p>
+        <pre><small><code class="language-js">
           &lt;pre&gt;&lt;code class="language-js"&gt;
-            test('2 + 2 is 4', () => expect(2 + 2).toBe(4))
+          test('2 + 2 is 4', () => expect(2 + 2).toBe(4))
           &lt;/code&gt;&lt;/pre&gt;
-        </code></pre>
+        </code></small></pre>
       </div>
 
       <div class="callout">
-        <h2 class="h4">Masonry Grid</h2>
-        <p>Easily display images in a beautiful <a href="{{root}}experiments/masonry-grid.html">masonry style photo grid</a> using CSS Grid.
-        </p>
-
+        <h3 class="h5">See What's Possible</h3>
+        <ul>
+          <small>
+            <li>
+              Easily display images in a beautiful
+              <a href="{{root}}experiments/masonry-grid.html">masonry style
+              photo grid</a> using CSS Grid.</li>
+            <li>Show event progress elegantly with
+              <a href="{{root}}experiments/nanobar.html">Nanobar</a>.
+            </li>
+            <li><a href="{{root}}experiments/rellax.html">Rellax</a></li>
+            <li><a href="{{root}}experiments/zingtouch.html">ZingTouch</a></li>
+          </small>
+        </ul>
       </div>
 
     </div>
@@ -104,6 +119,8 @@ title: FFront ⏩
 </div>
 
 <!-- Background Effect -->
-<canvas class="connecting-dots"></canvas>
+<div class="connecting-dots"></div>
 <style>.callout {background: transparent;}</style>
-<script> var canvasDots=function(){var canvas=document.querySelector('canvas'),ctx=canvas.getContext('2d'),colorDot='#ffdd99',color='#ffbb00';canvas.width=window.innerWidth;canvas.height=window.innerHeight;canvas.style.display='block';ctx.fillStyle=colorDot;ctx.lineWidth=.1;ctx.strokeStyle=color;var mousePosition={x:30*canvas.width/100,y:30*canvas.height/100};var dots={nb:600,distance:60,d_radius:100,array:[]};function Dot(){this.x=Math.random()*canvas.width;this.y=Math.random()*canvas.height;this.vx=-.5+Math.random();this.vy=-.5+Math.random();this.radius=Math.random()}; Dot.prototype={create:function(){ctx.beginPath();ctx.arc(this.x,this.y,this.radius,0,Math.PI*2,!1);ctx.fill()},animate:function(){for(i=0;i<dots.nb;i++){var dot=dots.array[i];if(dot.y<0||dot.y>canvas.height){dot.vx=dot.vx;dot.vy=-dot.vy} else if(dot.x<0||dot.x>canvas.width){dot.vx=-dot.vx;dot.vy=dot.vy}; dot.x+=dot.vx;dot.y+=dot.vy}},line:function(){for(i=0;i<dots.nb;i++){for(j=0;j<dots.nb;j++){i_dot=dots.array[i];j_dot=dots.array[j];if((i_dot.x-j_dot.x)<dots.distance&&(i_dot.y-j_dot.y)<dots.distance&&(i_dot.x-j_dot.x)>-dots.distance&&(i_dot.y-j_dot.y)>-dots.distance){if((i_dot.x-mousePosition.x)<dots.d_radius&&(i_dot.y-mousePosition.y)<dots.d_radius&&(i_dot.x-mousePosition.x)>-dots.d_radius&&(i_dot.y-mousePosition.y)>-dots.d_radius){ctx.beginPath();ctx.moveTo(i_dot.x,i_dot.y);ctx.lineTo(j_dot.x,j_dot.y);ctx.stroke();ctx.closePath()}}}}}};function createDots(){ctx.clearRect(0,0,canvas.width,canvas.height);for(i=0;i<dots.nb;i++){dots.array.push(new Dot());dot=dots.array[i];dot.create()}; dot.line();dot.animate()}; window.onmousemove=function(parameter){mousePosition.x=parameter.pageX;mousePosition.y=parameter.pageY}; mousePosition.x=window.innerWidth/2;mousePosition.y=window.innerHeight/2;setInterval(createDots,1000/30)};window.onload=function(){canvasDots()}; </script>
+<script>
+  var container = document.querySelector(".connecting-dots"); container.appendChild(document.createElement("canvas")); var canvasDots = function () { function t() { this.x = Math.random() * n.width, this.y = Math.random() * n.height, this.vx = -.5 + Math.random(), this.vy = -.5 + Math.random(), this.radius = Math.random() } var n = document.querySelector("canvas"), o = n.getContext("2d"); n.width = window.innerWidth, n.height = window.innerHeight, n.style.display = "block", o.fillStyle = "#ffdd99", o.lineWidth = .1, o.strokeStyle = "#ffbb00"; var e = { x: 30 * n.width / 100, y: 30 * n.height / 100 }, a = { nb: n.width * n.height / 2e3, distance: 60, d_radius: 100, array: [] }; t.prototype = { create: function () { o.beginPath(), o.arc(this.x, this.y, this.radius, 0, 2 * Math.PI, !1), o.fill() }, animate: function () { for (i = 0; i < a.nb; i++) { var t = a.array[i]; t.y < 0 || t.y > n.height ? (t.vx = t.vx, t.vy = -t.vy) : (t.x < 0 || t.x > n.width) && (t.vx = -t.vx, t.vy = t.vy), t.x += t.vx, t.y += t.vy } }, line: function () { for (i = 0; i < a.nb; i++)for (j = 0; j < a.nb; j++)i_dot = a.array[i], j_dot = a.array[j], i_dot.x - j_dot.x < a.distance && i_dot.y - j_dot.y < a.distance && i_dot.x - j_dot.x > -a.distance && i_dot.y - j_dot.y > -a.distance && i_dot.x - e.x < a.d_radius && i_dot.y - e.y < a.d_radius && i_dot.x - e.x > -a.d_radius && i_dot.y - e.y > -a.d_radius && (o.beginPath(), o.moveTo(i_dot.x, i_dot.y), o.lineTo(j_dot.x, j_dot.y), o.stroke(), o.closePath()) } }, window.onmousemove = function (t) { e.x = t.clientX, e.y = t.clientY }, e.x = window.innerWidth / 2, e.y = window.innerHeight / 2, setInterval(function () { for (o.clearRect(0, 0, n.width, n.height), i = 0; i < a.nb; i++)a.array.push(new t), dot = a.array[i], dot.create(); dot.line(), dot.animate() }, 1e3 / 30) }; window.onload = function () { canvasDots() }, window.onresize = function () { container.removeChild(document.querySelector(".connecting-dots canvas")), container.appendChild(document.createElement("canvas")), canvasDots() };
+</script>
