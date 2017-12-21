@@ -21,7 +21,7 @@ Gulp 4, Webpack, Babel, BrowserSync, Handlebars, Foundation 6
 Prettier, Jest, Jasmine Check
 
 **Utilities**:
-Axios, Zingtouch, Lodash, Date-fns, Rellax, Scroll Reveal, Prism, Clipboard
+ffjs, Axios, Zingtouch, Lodash, Date-fns, Rellax, Scroll Reveal, Prism, Clipboard
 
 **Layout Mode**: Exposes breakpoints & the box model as you work.
 
