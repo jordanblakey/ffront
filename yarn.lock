@@ -2481,9 +2481,9 @@ fd-slicer@~1.0.1:
   dependencies:
     pend "~1.2.0"
 
-ffjs@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/ffjs/-/ffjs-1.0.5.tgz#d51f69df0e5822dae4a5e6e7673cd3da5149e169"
+ffjs@^1.0.11:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/ffjs/-/ffjs-1.0.11.tgz#1dbdff6f471b0b516159ccdfd6b4ff6f3a64eb0f"
 
 figures@^1.3.5:
   version "1.7.0"
