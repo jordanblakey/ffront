@@ -1,6 +1,6 @@
 {
   "name": "ffront",
-  "version": "0.0.2",
+  "version": "1.0.1",
   "description": "Lightweight, performant, extensible front-end build system.",
   "homepage": "https://jordanblakey.github.io/ffront/",
   "repository": "git@github.com:jordanblakey/ffront.git",
@@ -13,7 +13,7 @@
     "test": "jest --coverage --verbose --notify --all"
   },
   "author": "Jordan Blakey",
-  "license": "MIT",
+  "license": "CC0",
   "dependencies": {
     "axios": "^0.17.1",
     "clipboard": "^1.7.1",
